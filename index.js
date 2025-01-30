@@ -17,8 +17,10 @@ const sampleMatrix3by1 = [
   [3]
 ];
 
-
 function simulate(){
+  if(!fieldValidation()){
+    return;
+  }
   clearTable();
   populateTable(computeNthDay());
 }
@@ -138,3 +140,39 @@ function computeNthDay(){
   return tempArray;
 }
 
+function fieldValidation(){
+  const ss = parseFloat(document.getElementById("js-sunny-sunny").value) * 100;
+  const sc = parseFloat(document.getElementById("js-sunny-cloudy").value) * 100;
+  const sr = parseFloat(document.getElementById("js-sunny-rainy").value) * 100;
+  const cs = parseFloat(document.getElementById("js-cloudy-sunny").value) * 100;
+  const cc = parseFloat(document.getElementById("js-cloudy-cloudy").value) * 100;
+  const cr = parseFloat(document.getElementById("js-cloudy-rainy").value) * 100;
+  const rs = parseFloat(document.getElementById("js-rainy-sunny").value) * 100;
+  const rc = parseFloat(document.getElementById("js-rainy-cloudy").value) * 100;
+  const rr = parseFloat(document.getElementById("js-rainy-rainy").value) * 100;
+
+  const sunny = (ss + sc + sr) / 100;
+  const cloudy = (cs + cc + cr) / 100;
+  const rainy = (rs + rc + rr) / 100;
+
+  if(sunny != 1){
+    alert("Sum of probabilities for Sunny should be equal to 1, Sunny = " + sunny);
+    return false;
+  } else if(cloudy != 1){
+    alert("Sum of probabilities for Cloudy should be equal to 1, Cloudy = " + cloudy); ;
+    return false;
+  } else if(rainy != 1){
+    alert("Sum of probabilities for Rainy should be equal to 1, Rainy = " + rainy);
+    return false;
+  }
+
+  const s = parseFloat(document.getElementById("js-sunny-start").value) * 100;
+  const c = parseFloat(document.getElementById("js-cloudy-start").value) * 100;
+  const r = parseFloat(document.getElementById("js-rainy-start").value) * 100;
+  const initialState = (s + c + r) / 100;
+  if(initialState != 1){
+    alert("Sum of probabilities for Initial State should be equal to 1, Initial State = " + initialState);
+    return false;
+  }
+  return true;
+}
