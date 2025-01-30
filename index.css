@@ -53,12 +53,14 @@ form #Input {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 300px;
 }
 
 label {
   display: block;
   font-weight: bold;
   margin: 12px;
+  font-size: 14px;
 }
 
 input[type="number"] {
@@ -68,6 +70,8 @@ input[type="number"] {
   border-radius: 4px;
   background-color: rgb(39, 39, 39);
   color: #f0f0f0;
+  height: 5px;
+  Width: 70px
 }
 
 button {
