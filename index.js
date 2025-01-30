@@ -19,6 +19,7 @@ const sampleMatrix3by1 = [
 
 function simulate(){
   if(!fieldValidation()){
+    clearTable();
     return;
   }
   clearTable();
