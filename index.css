@@ -1,10 +1,16 @@
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
   color: #f0f0f0;
-  min-height: 100svg;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -20,13 +26,17 @@ h1 {
   height: 650px;
   margin: 0 auto;
   margin-bottom: 20px;
-  background-color: #2e2e2e;
   color: #f0f0f0;
   justify-items: center;
   align-items: start;
   padding: 20px;
+}
+
+form {
+  background-color: #2e2e2e;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  padding: 20px;
 }
 
 form #Input {
@@ -76,12 +86,13 @@ button:hover {
 }
 
 #tableContainer {
-  background: #2e2e2e;
   padding: 0px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
   height: 100%;
+  background-color: #2e2e2e;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 table {
