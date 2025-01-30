@@ -10,47 +10,60 @@
 <body>
     <h1>⛓️‍💥 Markov Chain: Weather Prediction</h1>
     <div id="parent-container"> 
-        <form id="Start">
-            <label>☀️ Percentage</label>
-            <input type="number" id=""><br><br>
-            <label>☁️ Percentage</label>
-            <input type="number" id=""><br><br>
-            <label>🌧️ Percentage</label>
-            <input type="number" id=""><br> 
-            <label> No. of Days</label>
-            <input type="number" id=""><br> 
-
+        <form id="Input">
+            <div id="input-container">
             <label>☀️→☁️ Sunny to Cloudy:</label>
-                <input type="number" id=""><br><br>
-    
+                <input type="number" id="">
+            </div>
+            <div id="input-container">
                 <label> ☀️→🌧️ Sunny to Rainy:</label>
-                <input type="number" id=""><br><br>
-                
+                <input type="number" id="">
+            </div>
+            <div id="input-container">
                 <label> ☀️→☀️ Sunny to Sunny:</label>
-                <input type="number" id=""><br><br>
-        </form>
-            <form id="Percentage">
-    
+                <input type="number" id="">
+            </div>
+                <div id="input-container">
                 <label>☁️→☀️ Cloudy to Sunny:</label>
-                <input type="number" id=""><br><br>
-    
+                <input type="number" id="">
+                </div>
+                <div id="input-container">
                 <label>☁️→🌧️ Cloudy to Rainy:</label>
-                <input type="number" id=""><br><br>
-                
+                <input type="number" id="">
+                </div>
+                <div id="input-container">
                 <label>☁️→☁️ Cloudy to Cloudy:</label>
-                <input type="number" id=""><br><br>
-    
+                <input type="number" id="">
+                </div>
+                <div id="input-container">
                 <label >🌧️→☀️ Rainy to Sunny:</label>
-                <input type="number" id=""><br><br>
-    
+                <input type="number" id="">
+                </div>
+                <div id="input-container">
                 <label>🌧️→☀️ Rainy to Cloudy:</label>
-                <input type="number" id=""><br><br>
-    
+                <input type="number" id="">
+                </div>
+                <div id="input-container">
                 <label>🌧️→🌧️ Rainy to Rainy:</label>
-                <input type="number" id=""><br><br>
-
+                <input type="number" id="">
+                </div>
+                <div id="input-container">
+                    <label>☀️ Percentage</label>
+                    <input type="number" id="">
+                    </div>
+                    <div id="input-container">
+                    <label>☁️ Percentage</label>
+                    <input type="number" id="">
+                    </div>
+                    <div id="input-container">   
+                    <label>🌧️ Percentage</label>
+                    <input type="number" id="">
+                    </div>
+                    <div id="input-container">
+                    <label>#️⃣ No. of Days</label>
+                    <input type="number" id="">
+                    </div>
                 <button type="button" onclick="simulate()">Simulate</button> <br>
-    
             </form>
         <div id="tableContainer">
             <table id="resultsTable">
@@ -59,6 +72,174 @@
                     <th>P%R</th>
                     <th>P%S</th>
                     <th>P%C</th>
+                </tr>
+                <tr>
+                    <td>Row 1</td>
+                    <td>10%</td>
+                    <td>20%</td>
+                    <td>70%</td>
+                </tr>
+                <tr>
+                    <td>Row 2</td>
+                    <td>15%</td>
+                    <td>25%</td>
+                    <td>60%</td>
+                </tr>
+                <tr>
+                    <td>Row 3</td>
+                    <td>20%</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                </tr>
+                <tr>
+                    <td>Row 4</td>
+                    <td>25%</td>
+                    <td>35%</td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <td>Row 1</td>
+                    <td>10%</td>
+                    <td>20%</td>
+                    <td>70%</td>
+                </tr>
+                <tr>
+                    <td>Row 2</td>
+                    <td>15%</td>
+                    <td>25%</td>
+                    <td>60%</td>
+                </tr>
+                <tr>
+                    <td>Row 3</td>
+                    <td>20%</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                </tr>
+                <tr>
+                    <td>Row 4</td>
+                    <td>25%</td>
+                    <td>35%</td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <td>Row 1</td>
+                    <td>10%</td>
+                    <td>20%</td>
+                    <td>70%</td>
+                </tr>
+                <tr>
+                    <td>Row 2</td>
+                    <td>15%</td>
+                    <td>25%</td>
+                    <td>60%</td>
+                </tr>
+                <tr>
+                    <td>Row 3</td>
+                    <td>20%</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                </tr>
+                <tr>
+                    <td>Row 4</td>
+                    <td>25%</td>
+                    <td>35%</td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <td>Row 1</td>
+                    <td>10%</td>
+                    <td>20%</td>
+                    <td>70%</td>
+                </tr>
+                <tr>
+                    <td>Row 2</td>
+                    <td>15%</td>
+                    <td>25%</td>
+                    <td>60%</td>
+                </tr>
+                <tr>
+                    <td>Row 3</td>
+                    <td>20%</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                </tr>
+                <tr>
+                    <td>Row 4</td>
+                    <td>25%</td>
+                    <td>35%</td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <td>Row 1</td>
+                    <td>10%</td>
+                    <td>20%</td>
+                    <td>70%</td>
+                </tr>
+                <tr>
+                    <td>Row 2</td>
+                    <td>15%</td>
+                    <td>25%</td>
+                    <td>60%</td>
+                </tr>
+                <tr>
+                    <td>Row 3</td>
+                    <td>20%</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                </tr>
+                <tr>
+                    <td>Row 4</td>
+                    <td>25%</td>
+                    <td>35%</td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <td>Row 1</td>
+                    <td>10%</td>
+                    <td>20%</td>
+                    <td>70%</td>
+                </tr>
+                <tr>
+                    <td>Row 2</td>
+                    <td>15%</td>
+                    <td>25%</td>
+                    <td>60%</td>
+                </tr>
+                <tr>
+                    <td>Row 3</td>
+                    <td>20%</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                </tr>
+                <tr>
+                    <td>Row 4</td>
+                    <td>25%</td>
+                    <td>35%</td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <td>Row 1</td>
+                    <td>10%</td>
+                    <td>20%</td>
+                    <td>70%</td>
+                </tr>
+                <tr>
+                    <td>Row 2</td>
+                    <td>15%</td>
+                    <td>25%</td>
+                    <td>60%</td>
+                </tr>
+                <tr>
+                    <td>Row 3</td>
+                    <td>20%</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                </tr>
+                <tr>
+                    <td>Row 4</td>
+                    <td>25%</td>
+                    <td>35%</td>
+                    <td>40%</td>
                 </tr>
                 <tr>
                     <td>Row 1</td>
