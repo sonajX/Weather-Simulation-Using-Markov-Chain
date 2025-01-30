@@ -132,9 +132,9 @@ function computeNthDay(){
     result = multiplyMatrix(probabilityMatrix(), result);
     tempArray.push({ 
       firstCol: "Day " + i, 
-      pR: result[0][0].toFixed(4),
-      pS: result[1][0].toFixed(4),
-      pC: result[2][0].toFixed(4)
+      pR: result[0][0].toFixed(15),
+      pS: result[1][0].toFixed(15),
+      pC: result[2][0].toFixed(15)
     });
   }
   console.log(tempArray);
