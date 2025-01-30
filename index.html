@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Markov Chain</title>
     <link rel="stylesheet" href="index.css">
-    <script src="main.js" defer></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <h1>⛓️‍💥 Markov Chain: Weather Prediction</h1>
@@ -66,205 +66,15 @@
                 <button type="button" onclick="simulate()">Simulate</button> <br>
             </form>
         <div id="tableContainer">
-            <table id="resultsTable">
-                <tr>
-                    <th>First Col</th>
-                    <th>P%R</th>
-                    <th>P%S</th>
-                    <th>P%C</th>
-                </tr>
-                <tr>
-                    <td>Row 1</td>
-                    <td>10%</td>
-                    <td>20%</td>
-                    <td>70%</td>
-                </tr>
-                <tr>
-                    <td>Row 2</td>
-                    <td>15%</td>
-                    <td>25%</td>
-                    <td>60%</td>
-                </tr>
-                <tr>
-                    <td>Row 3</td>
-                    <td>20%</td>
-                    <td>30%</td>
-                    <td>50%</td>
-                </tr>
-                <tr>
-                    <td>Row 4</td>
-                    <td>25%</td>
-                    <td>35%</td>
-                    <td>40%</td>
-                </tr>
-                <tr>
-                    <td>Row 1</td>
-                    <td>10%</td>
-                    <td>20%</td>
-                    <td>70%</td>
-                </tr>
-                <tr>
-                    <td>Row 2</td>
-                    <td>15%</td>
-                    <td>25%</td>
-                    <td>60%</td>
-                </tr>
-                <tr>
-                    <td>Row 3</td>
-                    <td>20%</td>
-                    <td>30%</td>
-                    <td>50%</td>
-                </tr>
-                <tr>
-                    <td>Row 4</td>
-                    <td>25%</td>
-                    <td>35%</td>
-                    <td>40%</td>
-                </tr>
-                <tr>
-                    <td>Row 1</td>
-                    <td>10%</td>
-                    <td>20%</td>
-                    <td>70%</td>
-                </tr>
-                <tr>
-                    <td>Row 2</td>
-                    <td>15%</td>
-                    <td>25%</td>
-                    <td>60%</td>
-                </tr>
-                <tr>
-                    <td>Row 3</td>
-                    <td>20%</td>
-                    <td>30%</td>
-                    <td>50%</td>
-                </tr>
-                <tr>
-                    <td>Row 4</td>
-                    <td>25%</td>
-                    <td>35%</td>
-                    <td>40%</td>
-                </tr>
-                <tr>
-                    <td>Row 1</td>
-                    <td>10%</td>
-                    <td>20%</td>
-                    <td>70%</td>
-                </tr>
-                <tr>
-                    <td>Row 2</td>
-                    <td>15%</td>
-                    <td>25%</td>
-                    <td>60%</td>
-                </tr>
-                <tr>
-                    <td>Row 3</td>
-                    <td>20%</td>
-                    <td>30%</td>
-                    <td>50%</td>
-                </tr>
-                <tr>
-                    <td>Row 4</td>
-                    <td>25%</td>
-                    <td>35%</td>
-                    <td>40%</td>
-                </tr>
-                <tr>
-                    <td>Row 1</td>
-                    <td>10%</td>
-                    <td>20%</td>
-                    <td>70%</td>
-                </tr>
-                <tr>
-                    <td>Row 2</td>
-                    <td>15%</td>
-                    <td>25%</td>
-                    <td>60%</td>
-                </tr>
-                <tr>
-                    <td>Row 3</td>
-                    <td>20%</td>
-                    <td>30%</td>
-                    <td>50%</td>
-                </tr>
-                <tr>
-                    <td>Row 4</td>
-                    <td>25%</td>
-                    <td>35%</td>
-                    <td>40%</td>
-                </tr>
-                <tr>
-                    <td>Row 1</td>
-                    <td>10%</td>
-                    <td>20%</td>
-                    <td>70%</td>
-                </tr>
-                <tr>
-                    <td>Row 2</td>
-                    <td>15%</td>
-                    <td>25%</td>
-                    <td>60%</td>
-                </tr>
-                <tr>
-                    <td>Row 3</td>
-                    <td>20%</td>
-                    <td>30%</td>
-                    <td>50%</td>
-                </tr>
-                <tr>
-                    <td>Row 4</td>
-                    <td>25%</td>
-                    <td>35%</td>
-                    <td>40%</td>
-                </tr>
-                <tr>
-                    <td>Row 1</td>
-                    <td>10%</td>
-                    <td>20%</td>
-                    <td>70%</td>
-                </tr>
-                <tr>
-                    <td>Row 2</td>
-                    <td>15%</td>
-                    <td>25%</td>
-                    <td>60%</td>
-                </tr>
-                <tr>
-                    <td>Row 3</td>
-                    <td>20%</td>
-                    <td>30%</td>
-                    <td>50%</td>
-                </tr>
-                <tr>
-                    <td>Row 4</td>
-                    <td>25%</td>
-                    <td>35%</td>
-                    <td>40%</td>
-                </tr>
-                <tr>
-                    <td>Row 1</td>
-                    <td>10%</td>
-                    <td>20%</td>
-                    <td>70%</td>
-                </tr>
-                <tr>
-                    <td>Row 2</td>
-                    <td>15%</td>
-                    <td>25%</td>
-                    <td>60%</td>
-                </tr>
-                <tr>
-                    <td>Row 3</td>
-                    <td>20%</td>
-                    <td>30%</td>
-                    <td>50%</td>
-                </tr>
-                <tr>
-                    <td>Row 4</td>
-                    <td>25%</td>
-                    <td>35%</td>
-                    <td>40%</td>
-                </tr>
+            <table id="results-table">
+                <thead>
+                    <tr>
+                        <th>First Col</th>
+                        <th>P%R</th>
+                        <th>P%S</th>
+                        <th>P%C</th>
+                    </tr>
+                </thead>
             </table>
         </div>
     </div>
