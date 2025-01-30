@@ -2,8 +2,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #1e1e1e;
+  background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
   color: #f0f0f0;
+  min-height: 100svg;
 }
 
 h1 {
@@ -13,82 +14,69 @@ h1 {
 
 #parent-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 20px;
   width: 80%;
-  height: 100%;
-  margin: 0 auto; /* Center horizontally */
+  height: 650px;
+  margin: 0 auto;
   margin-bottom: 20px;
   background-color: #2e2e2e;
   color: #f0f0f0;
-  justify-items: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
+  justify-items: center;
+  align-items: start;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-form {
-  padding: 20px;
+form #Input {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
+  align-items: start;
+}
+
+#input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  width: 80%; /* Make the form fit within its grid cell */
-  height: 100%; /* Ensure the form takes up the full height of its grid cell */
 }
 
 label {
   display: block;
-  margin-bottom: 10px;
   font-weight: bold;
+  margin: 12px;
 }
 
 input[type="number"] {
-  width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #555;
   border-radius: 4px;
+  background-color: rgb(39, 39, 39);
+  color: #f0f0f0;
 }
 
 button {
-  background-color: #4caf50;
+  background-color: rgb(42, 134, 76);
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   width: 100%;
-  height: auto;
+  margin-top: 20px;
 }
 
 button:hover {
-  background-color: #45a049;
-}
-
-#start {
-  grid-column: 1;
-  grid-row: 1;
-  background-color: #3a3a3a;
-  color: #f0f0f0;
-  padding: 10px;
-  border-radius: 4px;
-}
-
-#percentage {
-  grid-column: 2;
-  grid-row: 1;
-  background-color: #3a3a3a;
-  color: #f0f0f0;
-  padding: 10px;
-  border-radius: 4px;
+  background-color: rgb(87, 113, 161);
 }
 
 #tableContainer {
-  grid-row: 2;
-  grid-column: span 2;
-  background: #fff;
+  background: #2e2e2e;
   padding: 0px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -98,14 +86,30 @@ button:hover {
 
 table {
   width: 100%;
-  height: 400px;
+  height: auto;
   border-collapse: collapse;
   text-align: center;
   table-layout: fixed;
+  color: #f0f0f0;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2e2e2e;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 10px;
+  border: 3px solidrgb(103, 103, 103);
 }
 
 tr:nth-child(even) {
-  background-color: rgb(220, 255, 224);
+  background-color: #3a3a3a;
 }
 
 th,
@@ -115,7 +119,7 @@ td {
 }
 
 th {
-  background-color: rgb(0, 157, 79);
+  background-color: rgb(42, 134, 76);
   color: white;
   font-weight: bold;
   text-align: center;
@@ -125,5 +129,6 @@ th {
 }
 
 td {
-  padding: 10px;
+  padding: 3px;
+  border: 1px solid #555;
 }
