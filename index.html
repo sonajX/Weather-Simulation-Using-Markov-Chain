@@ -12,6 +12,10 @@
     <div id="parent-container"> 
         <form id="Input">
             <div id="input-container">
+                <label> ☀️→☀️ Sunny to Sunny:</label>
+                <input type="number" id="js-sunny-sunny">
+            </div>
+            <div id="input-container">
             <label>☀️→☁️ Sunny to Cloudy:</label>
                 <input type="number" id="js-sunny-cloudy">
             </div>
@@ -20,59 +24,60 @@
                 <input type="number" id="js-sunny-rainy">
             </div>
             <div id="input-container">
-                <label> ☀️→☀️ Sunny to Sunny:</label>
-                <input type="number" id="js-sunny-sunny">
-            </div>
-                <div id="input-container">
                 <label>☁️→☀️ Cloudy to Sunny:</label>
-                <input type="number" id="js-cloud-sunny">
-                </div>
-                <div id="input-container">
-                <label>☁️→🌧️ Cloudy to Rainy:</label>
-                <input type="number" id="js-cloudy-rainy">
-                </div>
-                <div id="input-container">
+                <input type="number" id="js-cloudy-sunny">
+            </div>
+            
+
+            <div id="input-container">
                 <label>☁️→☁️ Cloudy to Cloudy:</label>
                 <input type="number" id="js-cloudy-cloudy">
-                </div>
-                <div id="input-container">
+            </div>
+
+
+            <div id="input-container">
+                <label>☁️→🌧️ Cloudy to Rainy:</label>
+                <input type="number" id="js-cloudy-rainy">
+            </div>
+                
+            <div id="input-container">
                 <label >🌧️→☀️ Rainy to Sunny:</label>
                 <input type="number" id="js-rainy-sunny">
-                </div>
-                <div id="input-container">
+            </div>
+            <div id="input-container">
                 <label>🌧️→☀️ Rainy to Cloudy:</label>
                 <input type="number" id="js-rainy-cloudy">
-                </div>
-                <div id="input-container">
+            </div>
+            <div id="input-container">
                 <label>🌧️→🌧️ Rainy to Rainy:</label>
                 <input type="number" id="js-rainy-rainy">
-                </div>
-                <div id="input-container">
-                    <label>☀️ Sunny Percentage:</label>
-                    <input type="number" id="js-sunny-start">
-                    </div>
-                    <div id="input-container">
-                    <label>☁️ Cloudy Percentage:</label>
-                    <input type="number" id="js-sunny-start">
-                    </div>
-                    <div id="input-container">   
-                    <label>🌧️ Rainy Percentage:</label>
-                    <input type="number" id="js-rainy-start">
-                    </div>
-                    <div id="input-container">
-                    <label>#️⃣ No. of Days:</label>
-                    <input type="number" id="">
-                    </div>
-                <button type="button" onclick="simulate()">Simulate</button> <br>
-            </form>
+            </div>
+            <div id="input-container">
+                <label>☀️ Sunny Percentage:</label>
+                <input type="number" id="js-sunny-start">
+            </div>
+            <div id="input-container">
+                <label>☁️ Cloudy Percentage:</label>
+                <input type="number" id="js-cloudy-start">
+            </div>
+            <div id="input-container">   
+                <label>🌧️ Rainy Percentage:</label>
+                <input type="number" id="js-rainy-start">
+            </div>
+            <div id="input-container">
+                <label>#️⃣ No. of Days:</label>
+                <input type="number" id="js-days">
+            </div>
+            <button type="button" onclick="simulate()">Simulate</button> <br>
+        </form>
         <div id="tableContainer">
             <table id="results-table">
                 <thead>
                     <tr>
-                        <th>First Col</th>
-                        <th>P%R</th>
-                        <th>P%S</th>
-                        <th>P%C</th>
+                        <th>Day</th>
+                        <th>P%Sunny</th>
+                        <th>P%Cloudy</th>
+                        <th>P%Rainy</th>
                     </tr>
                 </thead>
             </table>
