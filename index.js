@@ -42,15 +42,17 @@ function clearTable(){
 function populateTable(data) {
   const tableBody = document.querySelector("#results-table tbody") || document.createElement("tbody");
 
-  data.forEach((row) => {
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-      <td>${row.firstCol}</td>
-      <td>${row.pR}</td>
-      <td>${row.pS}</td>
-      <td>${row.pC}</td>
-    `;
-    tableBody.appendChild(tr);
+  data.forEach((row, index) => {
+    setTimeout(() => {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td>${row.firstCol}</td>
+        <td>${row.pR}</td>
+        <td>${row.pS}</td>
+        <td>${row.pC}</td>
+      `;
+      tableBody.appendChild(tr);
+    }, index * 250);
   });
 
   document.getElementById("results-table").appendChild(tableBody);

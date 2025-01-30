@@ -53,14 +53,14 @@ form #Input {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 300px;
+  width: 360px;
 }
 
 label {
   display: block;
   font-weight: bold;
   margin: 12px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 input[type="number"] {
